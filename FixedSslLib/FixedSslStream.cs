@@ -82,5 +82,10 @@ namespace FixedSslLib
 				base.Dispose (disposing);
 			}
 		}
+
+		public override string ToString ()
+		{
+			return $"{SslProtocol} stream ({CipherAlgorithm}, {KeyExchangeAlgorithm})";
+		}
 	}
 }
